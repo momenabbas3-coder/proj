@@ -12,7 +12,6 @@
     - name: T2
       ansible.builtin.debug:
         msg:
-          - changed is {{ out.changed }}
-          - Failure is {{ out.failed }}
-          - Output is {{ out.stdout }}
-          - Output LInes are {{ out.stdout_lines }}
+          - {{ item }}
+      loop:
+        - out.stdout_lines
