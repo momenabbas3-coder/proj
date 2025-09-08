@@ -11,4 +11,4 @@
 
     - name: T2
       ansible.builtin.debug:
-        var: out
+        var: out.stdout[0].splitlines()
