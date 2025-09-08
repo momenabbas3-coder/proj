@@ -13,4 +13,4 @@
       ansible.builtin.debug:
         var: item
       loop: out.stdout[0].splitlines()
-      when: 'hostname' in {{ item }}
+      when: 'hostname' in '{{ item }}'
