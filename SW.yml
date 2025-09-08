@@ -11,6 +11,5 @@
 
     - name: T2
       ansible.builtin.debug:
-        var: item
-      loop: out.stdout[0].splitlines()
-      when: 'hostname' in '{{ item }}'
+        var: out.stdout[0].splitlines()[out.stdout[0].splitlines().index('hostname SW1')]
+      when: 'hostname SW1' in out.stdout[0].splitlines()
