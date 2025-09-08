@@ -5,4 +5,5 @@
   tasks:
     - name: T1
       cisco.ios.ios_command:
-        command: show ip interface brief
+        commands: 
+          - show ip interface brief
