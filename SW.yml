@@ -12,6 +12,6 @@
     - name: T2
       ansible.builtin.debug:
         msg:
-          - {{ item }}
+          - '{{ item }}'
       loop:
         - out.stdout_lines
