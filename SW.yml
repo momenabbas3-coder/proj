@@ -4,11 +4,9 @@
   gather_facts: false
   tasks:
     - name: T1
-      cisco.ios.ios_config:
-        lines:
-          - interface loopback 0
-          - ip address 1.1.1.1 255.255.255.255
-      register: out
+      cisco.ios.ios_command:
+        commands:
+          - show run
 
     - name: T2
       ansible.builtin.debug:
