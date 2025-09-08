@@ -10,4 +10,4 @@
     
     - name: T2
       ansible.builtin.debug:
-        var: out.stdout_lines[0]
+        var: out.stdout_lines
