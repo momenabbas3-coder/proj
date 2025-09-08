@@ -6,7 +6,7 @@
     - name: T1
       ansible.builtin.command:
         cmd: 'ansible-doc -l'
-      regiter: out
+      register: out
     
     - name: T2
       ansible.builtin.debug:
