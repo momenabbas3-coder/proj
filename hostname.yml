@@ -1,0 +1,10 @@
+---
+- name: P1
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: T1
+      cisco.ios.ios_config:
+        lines:
+          - hostname: S1
+  
