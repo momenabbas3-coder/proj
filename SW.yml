@@ -14,4 +14,4 @@
         msg:
           - '{{ item }}'
       loop:
-        - out.stdout_lines
+        - '{{ out.stdout_lines }}'
