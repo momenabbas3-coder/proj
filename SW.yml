@@ -7,3 +7,8 @@
       cisco.ios.ios_command:
         commands: 
           - show ip interface brief
+      register: out
+
+    - name: T2
+      ansible.builtin.debug:
+        var: out
