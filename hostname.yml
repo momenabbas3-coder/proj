@@ -6,5 +6,5 @@
     - name: T1
       cisco.ios.ios_config:
         lines:
-          - hostname: S1
+          - hostname S1
   
