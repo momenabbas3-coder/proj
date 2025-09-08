@@ -6,3 +6,8 @@
     - name: T1
       ansible.builtin.command:
         cmd: 'ansible-doc -l'
+      regiter: out
+    
+    - name: T2
+      ansible.builtin.debug:
+        var: out.stdout_lines[0]
