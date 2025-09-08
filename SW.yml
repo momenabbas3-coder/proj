@@ -1,0 +1,9 @@
+---
+- name: P1
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: T1
+      cisco.ios.ios_command:
+        command: show ip interface brief
+  
