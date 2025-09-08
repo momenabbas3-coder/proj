@@ -5,4 +5,4 @@
   tasks:
     - name: T1
       ansible.builtin.debug:
-        - msg: 'Hi'
+        msg: 'Hi'
