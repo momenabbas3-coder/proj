@@ -12,7 +12,7 @@
     - name: T2
       ansible.builtin.debug:
         msg:
-          - '{{ out.changed }}'
-          - '{{ out.failed }}'
-          - '{{ out.stdout }}'
-          - '{{ out.stdout_lines }}'
+          - changed is {{ out.changed }}
+          - Failure is {{ out.failed }}
+          - Output is {{ out.stdout }}
+          - Output LInes are {{ out.stdout_lines }}
