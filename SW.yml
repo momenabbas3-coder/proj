@@ -4,6 +4,5 @@
   gather_facts: false
   tasks:
     - name: T1
-      cisco.ios.ios_config:
-        lines:
-          - hostname S1
+      cisco.ios.ios_command:
+        command: show ip interface brief
