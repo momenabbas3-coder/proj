@@ -6,7 +6,8 @@
     - name: T1
       cisco.ios.ios_command:
         commands:
-          - show run
+          - show run int g{{ item }}
+      loop: '{{ range(1, 5) }}'
       register: out
 
     - name: T2
